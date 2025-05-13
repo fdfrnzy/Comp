@@ -1,5 +1,3 @@
-// header file for the lexer module
-
 #ifndef LEXER_HEADER_DEFINED
 #define LEXER_HEADER_DEFINED
 // the TokenType enumerated data type represents all possible token types in a JACK program, ERR is used to indicate a lexical error

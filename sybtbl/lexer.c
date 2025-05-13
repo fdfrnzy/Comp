@@ -5,8 +5,6 @@
 #include <ctype.h>
 #include "lexer.h"
 
-
-// YOU CAN ADD YOUR OWN FUNCTIONS, DECLARATIONS AND VARIABLES HERE
 #define NumKeywords 21
 FILE *input;
 int LineCount;
@@ -16,15 +14,6 @@ const char* keywords[NumKeywords] = {"class", "constructor", "method", "function
 char current_file[100];
 Token TokenList[10000];
 int CurrentToken = 0;
-
-// IMPLEMENT THE FOLLOWING functions
-//***********************************
-
-// Initialise the lexer to read from source file
-// file_name is the name of the source file
-// This requires opening the file and making any necessary initialisations of the lexer
-// If an error occurs, the function should return 0
-// if everything goes well the function should return 1
 
 bool IsKeyWord(char* str){
   for(int i = 0; i < NumKeywords; i++){
